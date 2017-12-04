@@ -18,7 +18,6 @@ class SearchBar extends Component {
 
   onFormSubmit(event) {
     event.preventDefault()
-    // we gotta fetch data
     this.props.fetchWeather(this.state.term)
     this.setState({ term: '' })
   }
